@@ -1,7 +1,8 @@
 ﻿<!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
     <meta charset="utf-8" />
+    <!--makes sure the website adjusts its scale on smaller devices--> 
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="MJ's Personal Website">
     <meta name="author" content="Mustapha Jolaade">
@@ -12,8 +13,18 @@
     <!-- Custom styles for this template -->
     <link href="Content/scrolling-nav.css" rel="stylesheet">
     <link href="Content/Site.css" rel="stylesheet" />
-    <title> Mustapha Jolaade | Computational engineering </title>
+    
+    <!--Normalize: css files that helps evens out website appearance across browsers-->
+    <!-- and link to font-awesome. used for the social icons at the bottom-->
+    <link rel="stylesheet" 
+    href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css">
+    <link rel="stylesheet" 
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css"
+    integrity="sha256-46qynGAkLSFpVbEBog43gvNhfrOj+BmwXdxFgVK/Kvc=" crossorigin="anonymous" />
+
+    <title> Mustapha Jolaade | Portfolio Website </title>
 </head>
+
 <body id="page-top">
     <!-- Navigation -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top" id="mainNav">
@@ -41,6 +52,24 @@
         </div>
     </nav>
     <header class="bg-primary text-white">
+        <div class="logo">
+            <img src="img/IMG_3731.JPG" width="300" height="400" alt="">
+        </div>
+
+        <button class="nav-toggle" aria-label="toggle navigation">
+            <!-- we are going to animate this and make some fun things with it later-->
+            <span class="hamburger"></span>
+        </button>
+
+        <nav class="nav">
+            <!-- adding the double __ just to show it belongs to nav. makes going to css easier too.-->
+            <ul class="nav_list">
+                <li class="nav__item"><a href="#home" class="nav__link">Home</a></li>
+                <li class="nav__item"><a href="#working-ons" class="nav__link">What I'm working on</a></li>
+                <li class="nav__item"><a href="#about" class="nav__link">About Me</a></li>
+                <li class="nav__item"><a href="readings" class="nav__link">What I'm reading</a></li>
+            </ul> 
+        </nav>
         <div class="container text-center">
             <h1>Welcome to My Website</h1>
             <p class="lead">
@@ -49,6 +78,80 @@
             </p>
         </div>
     </header>
+
+    <!-- Introduction -->
+    <section class="intro" id="home">
+        <h1 class="section__title section__title--intro">
+            Hi, I am <strong> Mustapha Jolaade</strong>
+        </h1> 
+        <p class="section__title section__title--intro"> Junior Data Scientist and ML Enigneer</p>
+        <img src="img/sgd_background.jpg" style="width:100%; height:65vh; " alt="a picture of SGD">
+    </section>
+    
+
+    <!-- What I'm working on-->
+    <section class="working-on" id="working-ons">
+        <h2 class="section__title section__title--working-ons"> What I am working on</h2>
+
+        <!-- We need 3 div columns to subdivide the section-->
+        <div class="working-on">
+            <h3> Data Assimilation </h3>
+            <p> Data assimilation is the technique of using observed data to update model. 
+                The existing model is updated by adjusting its initial paramters to fit recently observed data.
+                Data assimialtion is essentially an inverse problem and mostly used in numerical weather predicition.
+            </p>
+        </div>
+
+        <div class="working-on">
+            <h3> Generative Networks </h3>
+            <p>
+                Generative networks are a ML framework that are trained to mimic
+                the statistical distribtuion of a specific dataset thus allowing 
+                us to generate "fake" samples that seem to belong to that distribution.
+                Recent works in this field of ML has shown great success 
+                indicating the huge promise these kind of networks have.
+            </p>
+        </div>
+
+        <div class="working-on">
+            <h3> Data science knowledge and skill develoment </h3>
+            <p>
+                Building my expertise in using essential data science skills, languages
+                and technologies. SQL, PySpark, AWS and Tensorflow are some of the tools
+                I have experience with and continue to buidl an expertise in. 
+            </p>
+        </div> 
+        <a href="#work" class="btn"> Completed projects</a>
+    </section> <!-- /What I'm working on -->
+
+    <!-- Profile-->
+    <section class="about me" id="about">
+        <h2 class="section__title section__title--about"> Who I am </h2>
+        <p class="section__subtitle section__subtitle--about"></p>
+
+        <div class="about-me__body">
+            <p> They call me boiii</p>
+            <p> Graduated from The University of Texas at Austin 
+                where I studied Petroleum Engineering and Mathematics
+            </p>
+        </div>
+
+        <img src="img/my_pic_0.jpg" alt="">
+
+    </section>
+
+    <!-- What I'm reading -->
+    <section class="readings" id="readings">
+        <h2 class="section__title"> What I'm reading</h2>
+        <p class="section__subtitle"></p>
+
+        <div class="reading">
+            <a href="#" class="reading_item">
+                <img src="img/readings/sci_img_SA.jpg" alt="" class="reading_img">
+            </a>
+        </div>
+    </section>
+
     <section id="profile">
         <div class="container">
             <div class="row">
@@ -114,17 +217,25 @@
     <!-- Footer -->
     <footer class="py-5 bg-dark">
         <div class="container">
+            
+            <a href="mailto:jolaademustapha@yahoo.com" class="footer__link">Send email</a>
+            <ul class="social-list">
+                <li class="social-list__item">
+                    <a href="https://github.com/acse-moj20"> github</a>
+                </li>
+
+                <li class="social-list__item">
+                    <a href="https://www.linkedin.com/in/mustapha-j-4954b096/"> LinkedIn</a>
+                </li>
+                <!--add a instagram page-->
+            </ul>
+
             <p class="m-0 text-center text-white">Copyright &copy; Mustapha Jolaade, 2021</p>
-            <!--add a cool instagram page-->
-            <!--some cool youtube maybe-->
         </div>
     </footer>
-    <! add a cool instagram page>
-    <! some cool youtube maybe>
     <!-- Bootstrap core JavaScript -->
     <script src="Scripts/jquery-3.3.1.js"></script>
     <script src="Scripts/bootstrap.js"></script>
-
     <script src="Scripts/scrolling-nav.js"></script>
 </body>
 </html>
