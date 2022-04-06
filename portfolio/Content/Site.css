@@ -18,6 +18,27 @@ textarea {
     max-width: 280px;
 }
 
+.slider{
+    width: 700px;
+    height: 550px;
+    background: #bfbfbf
+}
+
+#leftArrow {
+    width: 40px;
+    height: 40px;
+    background: #808080;
+    position: absolute;
+    left: 0px;
+}
+
+#rightArrow {
+    width: 40px;
+    height: 40px;
+    background: #808080;
+    position: absolute;
+    right: 0px;
+}
 
 /* Responsive: Portrait tablets and up */
 @media screen and (min-width: 768px) {
